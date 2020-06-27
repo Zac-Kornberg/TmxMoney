@@ -22,7 +22,8 @@ def get_stock_address():
 def get_last_price():
     return driver.find_element_by_class_name('price').text
 
-search('L')
+stockw = 'L' #testing purposes we are searching Loblaws
+search(stockw)
 print(get_stock_address())
 print(get_last_price())
 time.sleep(3)
